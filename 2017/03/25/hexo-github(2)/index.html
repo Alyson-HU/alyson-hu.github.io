@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	 <link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			
+    <title>
+    hmy
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+
+			    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">Alyson_HU</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">作品</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">资源</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/hexo/">hexo</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/exercise/" title="练习">
+		                练习
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/resume/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/miccall" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/images/top_img.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >hexo+github搭建自己的网站</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>  搭建博客简单介绍<br><a id="more"></a></p>
+<h2 id="安装nodejs-官网下载安装包安装即可"><a href="#安装nodejs-官网下载安装包安装即可" class="headerlink" title="安装nodejs(官网下载安装包安装即可)  "></a>安装nodejs(官网下载安装包安装即可)  </h2><p>　　点击进入<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js官网</a>,下载完成后安装即可</p>
+<h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><p>　　进入<a href="https://git-scm.com/downloads" target="_blank" rel="external">官网</a>下载，安装</p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo  "></a>安装hexo  </h2><p>1、首先，创建文件夹用来存放你的本地博客。本人的博客存放在d:/blog文件夹下<br>2、打开git窗口<br>3、输入以下命令，进入到<code>d:/blog</code><br>  cd d:<br>  cd blog<br>  其中，<code>cd 文件夹</code> 的意思便是进入到某个文件夹<br>4、一次性安装完hexo所需的所有东西<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g    </span><br><span class="line">npm install hexo --save  </span><br><span class="line">npm install hexo-deployer-git --save  </span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
+<p>安装速度慢，可以使用淘宝镜像：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">　　npm install cnpm -g --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure></p>
+<p>5、安装完成，我们可以看到文件夹下已经生成了很多东西，依次在git中执行以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">　　hexo clean  </span><br><span class="line">　　hexo g  </span><br><span class="line">　　hexo s</span><br></pre></td></tr></table></figure></p>
+<p>此时命令行会提示<code>http://localhost:4000/</code>，我们在浏览器中打开该链接，一个hello的博客就完成了。(#^.^#)</p>
+<h2 id="博客使用"><a href="#博客使用" class="headerlink" title="博客使用"></a>博客使用</h2><h3 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h3><p>打开hexo安装目录\source\文件夹，发现只有_posts一个文件夹，创建分类和标签。<br>1、执行命令hexo new categories，修改hexo安装目录\source\categories下的index.md文件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2016-07-16 04:36:09</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<p>2、执行命令hexo new tags,hexo安装目录\source\tags下的index.md文件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签云</span><br><span class="line">date: 2016-07-16 04:32:03</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<p>3、执行命令hexo new “first blog”，创建博客（或者直接在hexo安装目录\source_posts创建一个.md文件，里面写入以下内容）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 本人创建的第一篇  </span><br><span class="line">date: 2017-03-25 13:53:30  </span><br><span class="line">tags: 写作  </span><br><span class="line">categories: 随笔  </span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<h2 id="博客主题"><a href="#博客主题" class="headerlink" title="博客主题"></a>博客主题</h2><p>　　hexo有很多<a href="https://hexo.io/themes/" target="_blank" rel="external">主题</a>，找到自己喜欢的，点击图片预览博客样子，点击名称会进入github中。在github中将源码下载下来，解压放入themes文件夹中，修改_config.yml：<code>theme: yelee</code> 表示使用themes文件夹下yelee文件夹中的主题。</p>
+<h3 id="使用next主题"><a href="#使用next主题" class="headerlink" title="使用next主题"></a>使用next主题</h3><p>（网上很多，此处记下可能遇到的问题）<br>(1) 使用中文语言：<br>　　修改（hexo安装目录_config.yml）文件：(不是themes\next_config.yml)<br>　　language: zh-Hans<br>(3) 部署到github上js、css找不到<br>　　修改（hexo安装目录_config.yml）文件：<br>　　　　root: /blog/  #blog是你github上面的仓库名称  </p>
+<h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2><p>当前，首先得在<a href="https://github.com/" target="_blank" rel="external">github</a>上注册一个账号，然后，<br>1、github上创建一个仓库<br>　　仓库名称(Repository name)可以写成blog。github自动生成的网址会是：<a href="https://账户名称.github.io/仓库名称/" target="_blank" rel="external">https://账户名称.github.io/仓库名称/</a> ，此时，如果仓库名称写成<code>账户名称.github.io</code>,那么，github自动生成的网址会是：<a href="https://账户名称.github.io/" target="_blank" rel="external">https://账户名称.github.io/</a> （记得勾选Initialize this repository with a README）<br>　　在项目的settings中，GitHub Pages中选择master branch，save后，会生成url。之后将本地的博客部署到这里，访问该网址，便ok啦！<br>2、使用git部署hexo到github:<br>(1)设置git<br>　　git使用hexo deploy部署的时候，保证user.name和github账上上的账户名一致。<br>　　查看用户名 ：<code>git config --list</code><br>　　如果首次安装，没有设置，可以使用下面命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;ff&quot;  </span><br><span class="line">git config --global user.email &quot;liuchao102@163.com&quot;</span><br></pre></td></tr></table></figure></p>
+<p>　　如果已经设置好了，向修改：<code>vi ~/.gitconfig</code>   按下i键，修改，dd删除一行，esc退出编辑。按住shift，wq保存<br>(2)生成ssh秘钥<br>　　要部署到github上，本地要有权限。在git中生成秘钥<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;xxx@163.com&quot;</span><br></pre></td></tr></table></figure></p>
+<p>　　生成完秘钥之后会在 <code>C:\Users\Administrator\.ssh</code> 目录下生成 id_rsa和id_rsa.pub两个文件<br>　　拷贝id_rsa.pub文件内容到 github上就可以了(Settings-&gt;SSH and GPG keys-&gt;new SSH Key -&gt; 输入文件内容 -&gt; 保存完成)<br>(3)执行以下命令部署：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></p>
+<h2 id="使用atom实现预览编辑文档"><a href="#使用atom实现预览编辑文档" class="headerlink" title="使用atom实现预览编辑文档  "></a>使用atom实现预览编辑文档  </h2><p>　　atom安装插件atom-hexo，速度很慢，可以使用本地安装：<br>　　在github上下载好后解压到C:\Users\cage.atom\packages，cmd打开命令行输入：apm install安装即可。<br>　　如果apm命令找不到，在环境变量中加入: C:\Users\hfyuser\AppData\Local\atom\bin<br>　　atom自带markdown preview，编写md可以实时浏览。</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="http://code.youmeek.com/2016/02/29/2016/02/Hexo-Intensify/" target="_blank" rel="external">置顶文章</a><br><a href="http://www.jianshu.com/p/e99ed60390a8" target="_blank" rel="external">20分钟教你使用hexo搭建github博客</a></p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://hmy.github.io/2017/03/25/hexo-github(2)/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://hmy.github.io/2017/03/25/hexo-github(2)/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2017总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
